@@ -27,27 +27,27 @@ header h1 {
 header hr {
     color: #d3d3d3;
     margin-top: 3px;
-    margin-bottom: 30px;
+    margin-bottom: 22px;
 }
 
 main {
     line-height: 25px;
 }
 
+main p {
+    padding: 8px 0px;
+}
+
 ol {
     padding-left: 30px;
 }
 
-.spacer {
-    margin: 15px;
-}
-
-#img-spacer {
-    margin: 50px;
+li {
+    padding: 8px 0px;
 }
 
 img {
     display: block;
-    margin: 0 auto;
+    margin: 40px auto 0px;
     max-width: 25%;
 }
