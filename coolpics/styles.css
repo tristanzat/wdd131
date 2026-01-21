@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+  font-family: Nunito, Arial, sans-serif;
+}
+header,
+footer {
+  background-color: #4c80e2;
+  color: white;
+}
+h1 {
+  margin: 0;
+  padding: 20px 0 10px 0;
+  text-align: center;
+}
+.menu-div {
+  display: flex;
+  justify-content: center;
+}
+button p {
+  margin: 5px;
+  color: white;
+  font-size: 1.3em;
+}
+nav a {
+  padding: 20px;
+  color: white;
+  display: none;
+}
+.menu-btn {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+h2 {
+  text-align: center;
+}
+#img-grid {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding: 0 20px;
+}
+img {
+  margin: 1em;
+  object-fit: cover;
+  width: 250px;
+  aspect-ratio: 1 / 1;
+  border: 3px solid white;
+  box-shadow: 1px 1px 4px 1px black;
+  border-radius: 3px;
+}
+footer {
+  text-align: center;
+}
+footer p {
+  margin: 0;
+  padding: 5px;
+}
+
+@media screen and (min-width: 700px) {
+  #img-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #img-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .menu-btn {
+    display: none;
+  }
+  nav a {
+    display: inline;
+  }
+  nav {
+    text-align: center;
+  }
+}
