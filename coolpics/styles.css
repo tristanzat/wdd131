@@ -7,7 +7,7 @@ body {
 }
 header,
 footer {
-  background-color: #4c80e2;
+  background-color: #2980e2;
   color: white;
 }
 h1 {
@@ -27,6 +27,10 @@ button p {
 nav a {
   padding: 20px;
   color: white;
+  display: block;
+  text-align: center;
+}
+.hide {
   display: none;
 }
 .menu-btn {
@@ -37,7 +41,7 @@ nav a {
 h2 {
   text-align: center;
 }
-#img-grid {
+.img-grid {
   max-width: 1000px;
   margin: 0 auto;
   display: grid;
@@ -45,7 +49,7 @@ h2 {
   justify-items: center;
   padding: 0 20px;
 }
-img {
+.gallery-display {
   margin: 1em;
   object-fit: cover;
   width: 250px;
@@ -62,14 +66,37 @@ footer p {
   padding: 5px;
 }
 
+/* modal */
+dialog {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+dialog img {
+  max-width: 800px;
+  width: 90%;
+  display: block;
+  margin: 20vh auto;
+}
+/* I can't seem to figure out how to make the X button stick to the top right of the image.
+Currently, when the screen is wider than the image will display, the button sticks to the
+right edge of the screen. */
+.close-viewer {
+  position: absolute;
+  top: 18vh;
+  right: 2vh;
+  padding: 1px 5px;
+  font-size: 1.5em;
+}
+
 @media screen and (min-width: 700px) {
-  #img-grid {
+  .img-grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  #img-grid {
+  .img-grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
   .menu-btn {
