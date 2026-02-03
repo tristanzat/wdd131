@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Nunito&display=swap");
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+h1,
+h2 {
+  font-family: "Noto Serif", serif;
+}
+header,
+footer {
+  text-align: center;
+}
+footer {
+  border-top: 2px solid #e7bc7f;
+}
+nav {
+  text-align: right;
+  padding: 10px;
+  border-top: 2px solid #e7bc7f;
+  border-bottom: 2px solid #e7bc7f;
+}
+nav a {
+  color: #be173e;
+  text-decoration: none;
+  padding-right: 30px;
+}
+#book-list {
+    margin-top: 40px;
+}
+.book {
+  display: grid;
+  grid-template-columns: 1fr 100px;
+  border-top: 2px solid #e7bc7f;
+  margin: 10px;
+  padding: 0 50px;
+  margin: 20px auto;
+}
+.details {
+    grid-column: 2/3;
+}
+.book h2 {
+  color: #be173e;
+  font-size: 1.5rem;
+  margin: 20px 0;
+}
+.book p {
+  margin: 0;
+  padding-top: 10px;
+  text-align: right;
+}
+.book img {
+  max-width: 90%;
+  display: block;
+  margin: 0 auto;
+}
+#desc {
+  text-align: left;
+}
+
+@media (min-width: 1000px) {
+  #book-list {
+    margin: 0;
+  }
+  .book {
+    grid-template-columns: 200px 1fr;
+    padding: 30px 150px;
+    border: none;
+  }
+  .details, .main-book {
+    padding: 0 50px;
+  }
+  .details {
+    grid-column: 1/2;
+    border-right: 2px solid #e7bc7f;
+  }
+}
