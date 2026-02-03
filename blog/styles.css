@@ -29,7 +29,7 @@ nav a {
   padding-right: 30px;
 }
 #book-list {
-    margin-top: 40px;
+  margin-top: 40px;
 }
 .book {
   display: grid;
@@ -40,7 +40,7 @@ nav a {
   margin: 20px auto;
 }
 .details {
-    grid-column: 2/3;
+  grid-column: 2/3;
 }
 .book h2 {
   color: #be173e;
@@ -70,7 +70,8 @@ nav a {
     padding: 30px 150px;
     border: none;
   }
-  .details, .main-book {
+  .details,
+  .main-book {
     padding: 0 50px;
   }
   .details {
