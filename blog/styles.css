@@ -16,6 +16,7 @@ footer {
 }
 footer {
   border-top: 2px solid #e7bc7f;
+  border-bottom: 2px solid #e7bc7f;
 }
 nav {
   text-align: right;
