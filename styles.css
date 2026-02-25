@@ -1,5 +1,14 @@
 * {
-  margin: 0;
-  background-color: #0d0d14;
+  background-color: #000020;
   color: white;
+  text-align: center;
+}
+
+.assignments {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.assignments h2 {
+  grid-column: 1 / 3;
 }
