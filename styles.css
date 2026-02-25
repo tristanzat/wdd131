@@ -4,11 +4,11 @@
   text-align: center;
 }
 
-.assignments {
+#assignments {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.assignments h2 {
+#assignments h2 {
   grid-column: 1 / 3;
 }
