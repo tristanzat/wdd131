@@ -20,7 +20,7 @@ console.log(aCourse.code);
 console.log(aCourse.name);
 
 document.querySelector("#courseName").textContent = aCourse.name;
-document.querySelector("#coursecode").textContent = aCourse.code;
+document.querySelector("#courseCode").textContent = aCourse.code;
 
 document.querySelector("img").setAttribute("src", aCourse.logo);
 document.querySelector("img").setAttribute("alt", aCourse.name);
