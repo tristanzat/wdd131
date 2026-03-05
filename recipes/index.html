@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="Tristan Zatylny">
+    <meta name="description" content="A dynamic recipe book webpage.">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Your Title">
+    <meta property="og:description" content="Your Description">
+    <meta property="og:url" content="Your URL">
+    <meta property="og:image" content="social-preview-image.png">
+
+    <!-- X Card -->
+    <meta name="twitter:card" content="Social Preview Image">
+    <meta name="twitter:title" content="Your Title">
+    <meta name="twitter:description" content="Your Description">
+    <meta name="twitter:image" content="social-preview-image.png">
+
+    <!-- One favicon (ICO works everywhere) -->
+    <link rel="icon" href="/favicon.ico">
+
+    <!-- One Apple Touch Icon (iOS home screen) -->
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/recipe-book.png" alt="recipe book logo">
+        <h1 id="title">RecipeBook</h1>
+    </header>
+    <main>
+        <form class="search-bar" aria-label="search bar">
+            <input type="text" name="recipeSearch" placeholder="Find a recipe">
+            <button type="submit" aria-label="search button">
+                <img src="images/search.svg" alt="magnifying glass icon">
+            </button>
+        </form>
+        <hr>
+        <section class="recipe-item">
+            <div class="recipe-img">
+                <img src="images/apple-crisp.jpg" alt="picture of apple crisp">
+            </div>
+            <div class="recipe-content">
+                <p class="tag">dessert</p>
+                <h3 class="recipe-name">Apple Crisp</h3>
+                <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star">⭐</span>
+                    <span aria-hidden="true" class="icon-star-empty">☆</span>
+                </span>
+                <p class="description">
+                    This apple crisp recipe is a simple yet delicious fall dessert that's great served
+                    warm with vanilla ice cream.
+                </p>
+            </div>
+        </section>
+        </div>
+    </main>
+    <footer>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">
+            Recipe icons created by Freepik - Flaticon
+        </a>
+
+    </footer>
+</body>
+
+</html>
