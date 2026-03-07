@@ -115,7 +115,7 @@ footer .social {
   width: 30px;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 550px) {
   #logo {
     height: 100px;
     width: auto;
