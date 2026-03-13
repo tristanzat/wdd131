@@ -9,7 +9,7 @@ const simpleList = ["oranges", "grapes", "lemons", "apples", "Bananas", "waterme
 
 let simpleSort = simpleList.sort();
 
-console.log(simpleSort());
+console.log(simpleSort);
 
 let lowerList = simpleList.map(function(fruit) {
     return fruit.toLowerCase();
