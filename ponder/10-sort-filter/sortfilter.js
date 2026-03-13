@@ -85,7 +85,7 @@ let query = 'ox';
 let filteredList = animals.filter(searchList);
 
 function searchList(item) {
-    return item.name.toLowerCase().incules(query.toLowerCase());
+    return item.name.toLowerCase().includes(query.toLowerCase());
 }
 
 console.log(filteredList);
@@ -95,7 +95,7 @@ let queryTrait = 'strong';
 let filteredTraits = animals.filter(searchTraits);
 
 function searchTraits(item) {
-    return item.traits.find((trait) => trait.toLowerCase().incules(queryTrait.toLowerCase()));
+    return item.traits.find((trait) => trait.toLowerCase().includes(queryTrait.toLowerCase()));
 }
 
 console.log(filteredTraits);
