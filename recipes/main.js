@@ -282,17 +282,18 @@ const recipes = [
 ]
 
 let recipeContainer = document.querySelector('#recipe-container');
-let input = document.querySelector('#search')
-let button = document.querySelector('#search-button');
+let searchForm = document.querySelector('.search-bar');
 let randomNum = Math.floor(Math.random() * recipes.length);
 
-
-button.addEventListener('click', search);
-// for the enter key to work on search - not just clicking the search button
-input.addEventListener('keypress', handleEnter);
+searchForm.addEventListener('submit', search);
 
 
-function search() {
+function search(event) {
+
+	// prevent default page reload on submit
+	if (event) {
+		event.preventDefault();
+	}
 
     let recipeQuery = document.querySelector('#search').value;
 
@@ -322,12 +323,6 @@ function search() {
     sortedRecipes.forEach(function(recipe){
       renderRecipe(recipe);
     })
-}
-
-function handleEnter(event) {
-  if (event.key === 'Enter') {
-    search();
-  }
 }
 
 function tagTemplate(tags) {
