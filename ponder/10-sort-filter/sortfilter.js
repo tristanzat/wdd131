@@ -20,7 +20,7 @@ console.log(lowerSort);
 
 let searchTerm = 'co';
 
-let fillterFruit = lowerSort.filter(searchFruit);
+let filterFruit = lowerSort.filter(searchFruit);
 
 function searchFruit(item) {
     return item.includes(searchTerm);
