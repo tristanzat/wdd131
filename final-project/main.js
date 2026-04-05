@@ -16,12 +16,12 @@ function statTotal(pokemon) {
 function cardMarkup(pokemon) {
   return `
     <img src="${pokemon.image}" alt="${pokemon.name} official artwork" width="240" height="240">
-    <div class="card-body">
+    <div class="pokemon-card-body">
       <p class="pokemon-number">#${pokemon.id.toString().padStart(3, "0")}</p>
       <h3>${pokemon.name}</h3>
-      <p class="type-row">${pokemon.types.map((type) => `<span class="chip">${type}</span>`).join("")}</p>
-      <p class="description">${pokemon.description}</p>
-      <dl class="stats">
+      <p class="pokemon-type-row">${pokemon.types.map((type) => `<span class="pokemon-type-chip">${type}</span>`).join("")}</p>
+      <p class="pokemon-description">${pokemon.description}</p>
+      <dl class="pokemon-stats">
         <div><dt>HP</dt><dd>${pokemon.hp}</dd></div>
         <div><dt>ATK</dt><dd>${pokemon.attack}</dd></div>
         <div><dt>DEF</dt><dd>${pokemon.defense}</dd></div>
@@ -31,7 +31,7 @@ function cardMarkup(pokemon) {
         <div><dt>Total</dt><dd>${statTotal(pokemon)}</dd></div>
         <div><dt>Size</dt><dd>${pokemon.height}m / ${pokemon.weight}kg</dd></div>
       </dl>
-      <p class="ability-row"><strong>Abilities:</strong> ${pokemon.abilities.join(", ")}</p>
+      <p class="pokemon-abilities"><strong>Abilities:</strong> ${pokemon.abilities.join(", ")}</p>
     </div>
   `;
 }
@@ -123,7 +123,7 @@ function initEncyclopediaPage() {
     resultCount.textContent = `Showing ${pokemonList.length} Pokemon`;
 
     if (pokemonList.length === 0) {
-      pokemonGrid.innerHTML = "<p class='empty'>No Pokemon match your search.</p>";
+      pokemonGrid.innerHTML = "<p class='empty-state'>No Pokemon match your search.</p>";
       return;
     }
 

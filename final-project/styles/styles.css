@@ -122,14 +122,15 @@ p {
 	color: #fff;
 }
 
-.section-wrap {
+.page-container {
 	max-width: 1100px;
 	margin: 0 auto;
 	padding: 1.25rem 1rem;
 }
 
-.hero {
+.home-hero {
 	padding-top: 2rem;
+	text-align: center;
 }
 
 .eyebrow {
@@ -141,16 +142,19 @@ p {
 	font-size: 0.82rem;
 }
 
-.lead,
-.supporting {
+.hero-text,
+.section-supporting-text {
 	max-width: 65ch;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-.hero-actions {
+.hero-cta {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.7rem;
 	margin-top: 1rem;
+	justify-content: center;
 }
 
 .button {
@@ -171,23 +175,23 @@ p {
 	box-shadow: var(--shadow);
 }
 
-.button.primary {
+.button-primary {
 	background: var(--secondary);
 	color: #fff;
 }
 
-.button.secondary {
+.button-secondary {
 	background: var(--accent);
 	color: #fff;
 }
 
-.button.ghost {
+.button-ghost {
 	background: #fff;
 	border-color: var(--line);
 	color: var(--primary);
 }
 
-.section-heading {
+.page-heading {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.75rem;
@@ -195,7 +199,7 @@ p {
 	align-items: center;
 }
 
-.featured {
+.home-feature {
 	padding-bottom: 2rem;
 }
 
@@ -235,7 +239,7 @@ body[data-page="home"] #featured-card {
 	margin: 0.8rem auto;
 }
 
-.card-body {
+.pokemon-card-body {
 	padding: 0 1rem 1rem;
 }
 
@@ -245,14 +249,14 @@ body[data-page="home"] #featured-card {
 	font-weight: 700;
 }
 
-.type-row {
+.pokemon-type-row {
 	display: flex;
 	flex-wrap: wrap;
 	gap: 0.35rem;
 	margin: 0.5rem 0 0.7rem;
 }
 
-.chip {
+.pokemon-type-chip {
 	background: var(--surface-alt);
 	border: 1px solid var(--line);
 	border-radius: 999px;
@@ -261,18 +265,18 @@ body[data-page="home"] #featured-card {
 	font-weight: 700;
 }
 
-.description {
+.pokemon-description {
 	margin-bottom: 0.75rem;
 }
 
-.stats {
+.pokemon-stats {
 	margin: 0;
 	display: grid;
 	grid-template-columns: repeat(2, minmax(0, 1fr));
 	gap: 0.4rem 0.8rem;
 }
 
-.stats div {
+.pokemon-stats div {
 	display: flex;
 	justify-content: space-between;
 	border-bottom: 1px dashed var(--line);
@@ -280,16 +284,16 @@ body[data-page="home"] #featured-card {
 	gap: 1rem;
 }
 
-.stats dt {
+.pokemon-stats dt {
 	font-weight: 600;
 }
 
-.stats dd {
+.pokemon-stats dd {
 	margin: 0;
 	font-weight: 800;
 }
 
-.ability-row {
+.pokemon-abilities {
 	margin: 0.85rem 0 0;
 }
 
@@ -298,7 +302,7 @@ body[data-page="home"] #featured-card {
 	padding-bottom: 2.2rem;
 }
 
-.controls {
+.filter-panel {
 	margin-top: 1rem;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -309,13 +313,13 @@ body[data-page="home"] #featured-card {
 	padding: 1rem;
 }
 
-.controls label {
+.filter-panel label {
 	font-size: 0.9rem;
 	font-weight: 700;
 }
 
-.controls input,
-.controls select {
+.filter-panel input,
+.filter-panel select {
 	border: 1px solid var(--line);
 	border-radius: 0.65rem;
 	min-height: 2.6rem;
@@ -330,7 +334,7 @@ body[data-page="home"] #featured-card {
 	font-weight: 700;
 }
 
-.empty {
+.empty-state {
 	background: #fff;
 	border: 1px dashed var(--line);
 	border-radius: 0.9rem;
@@ -396,16 +400,16 @@ body[data-page="home"] #featured-card {
 		background: var(--secondary);
 	}
 
-	.hero {
+	.home-hero {
 		padding-top: 3rem;
 	}
 
-	.controls {
+	.filter-panel {
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 		align-items: end;
 	}
 
-	.controls button {
+	.filter-panel button {
 		align-self: center;
 		justify-self: start;
 		margin-top: 1.2rem;
@@ -421,16 +425,16 @@ body[data-page="home"] #featured-card {
 		grid-template-columns: repeat(3, minmax(0, 1fr));
 	}
 
-	.controls {
+	.filter-panel {
 		grid-template-columns: 1.4fr 1fr 1fr auto;
 		gap: 0.65rem 0.85rem;
 	}
 
-	.controls label {
+	.filter-panel label {
 		margin-top: 0;
 	}
 
-	.controls button {
+	.filter-panel button {
 		margin-top: 1.45rem;
 	}
 }
