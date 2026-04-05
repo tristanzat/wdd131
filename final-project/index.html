@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokencyclopedia | Home</title>
+        <meta name="author" content="Tristan Zatylny">
+        <meta name="description"
+            content="Explore Pokemon stats, abilities, and types with a fast and responsive Pokemon encyclopedia.">
+        <link rel="stylesheet" href="styles/styles.css">
+        <script type="module" src="main.js" defer></script>
+
+        <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Pokencyclopedia">
+        <meta property="og:description"
+            content="Explore Pokemon stats, abilities, and types with a fast and responsive Pokemon encyclopedia.">
+        <meta property="og:url" content="https://github.io/tristanzat/wdd131/final-project">
+        <meta property="og:image" content="social-preview-image.png">
+
+        <!-- X Card -->
+        <meta name="twitter:card" content="Social Preview Image">
+        <meta name="twitter:title" content="Pokencyclopedia">
+        <meta name="twitter:description"
+            content="Explore Pokemon stats, abilities, and types with a fast and responsive Pokemon encyclopedia.">
+        <meta name="twitter:image" content="social-preview-image.png">
+
+        <!-- One favicon (ICO works everywhere) -->
+        <link rel="icon" href="/favicon.ico">
+
+        <!-- One Apple Touch Icon (iOS home screen) -->
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    </head>
+
+    <body data-page="home">
+        <header class="site-header">
+            <div class="header-inner">
+                <a class="brand" href="index.html" aria-label="Pokencyclopedia home">
+                    <img id="logo" src="images/logo.png" alt="Pokencyclopedia logo">
+                    <span class="site-name">Pokencyclopedia</span>
+                </a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+                <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+                    <a href="index.html" aria-current="page">Home</a>
+                    <a href="encyclopedia.html">Encyclopedia</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section id="featured" class="section-wrap featured">
+                <article id="featured-card" class="pokemon-card" aria-live="polite"></article>
+            </section>
+            <section class="hero section-wrap">
+                <h1>Welcome to Pokéncyclopedia!</h1>
+                <p class="lead">Find out anything you need about certain Pokémon, including stats, abilities, and attributes not shown to you in the games. 
+                Search for a specific Pokémon, filter for those that meet your requirements, or look at a random one!</p>
+                <div class="hero-actions">
+                    <a class="button primary" href="encyclopedia.html">Explore Encyclopedia</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Tristan Zatylny</p>
+        </footer>
+    </body>
 </html>

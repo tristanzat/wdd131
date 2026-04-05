@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokencyclopedia | Encyclopedia</title>
+        <meta name="author" content="Tristan Zatylny">
+        <meta name="description" content="Browse Pokemon by name and type with dynamic cards and sortable stats.">
+        <link rel="stylesheet" href="styles/styles.css">
+        <script type="module" src="main.js" defer></script>
+
+        <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Pokencyclopedia">
+        <meta property="og:description" content="Browse Pokemon by name and type with dynamic cards and sortable stats.">
+        <meta property="og:url" content="https://github.io/tristanzat/wdd131/final-project">
+        <meta property="og:image" content="social-preview-image.png">
+
+        <!-- X Card -->
+        <meta name="twitter:card" content="Social Preview Image">
+        <meta name="twitter:title" content="Pokencyclopedia">
+        <meta name="twitter:description" content="Browse Pokemon by name and type with dynamic cards and sortable stats.">
+        <meta name="twitter:image" content="social-preview-image.png">
+
+        <!-- One favicon (ICO works everywhere) -->
+        <link rel="icon" href="/favicon.ico">
+
+        <!-- One Apple Touch Icon (iOS home screen) -->
+        <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    </head>
+
+    <body data-page="encyclopedia">
+       <header class="site-header">
+            <div class="header-inner">
+                <a class="brand" href="index.html" aria-label="Pokencyclopedia home">
+                    <img id="logo" src="images/logo.png" alt="Pokencyclopedia logo">
+                    <span class="site-name">Pokencyclopedia</span>
+                </a>
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+                <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+                    <a href="index.html">Home</a>
+                    <a href="encyclopedia.html" aria-current="page">Encyclopedia</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="section-wrap encyclopedia-main">
+            <section class="section-heading">
+                <h1>Pokemon Encyclopedia</h1>
+                <p class="supporting">Use search and filters to find your team build faster.</p>
+            </section>
+
+            <section class="controls" aria-label="Pokemon filters">
+                <label for="search">Search</label>
+                <input id="search" type="search" placeholder="Search by name or ability" autocomplete="off">
+
+                <label for="type-filter">Type</label>
+                <select id="type-filter">
+                    <option value="all">All Types</option>
+                </select>
+
+                <label for="sort-filter">Sort</label>
+                <select id="sort-filter">
+                    <option value="number-asc">Number: Low to High</option>
+                    <option value="number-desc">Number: High to Low</option>
+                    <option value="name-asc">Name: A to Z</option>
+                    <option value="stats-desc">Highest Total Stats</option>
+                </select>
+
+                <button id="random-pick" class="button secondary" type="button">Random Pick</button>
+            </section>
+
+            <p id="results-count" class="result-count" aria-live="polite"></p>
+            <section id="pokemon-grid" class="pokemon-grid" aria-live="polite"></section>
+        </main>
+
+        <footer class="site-footer">
+            <p>&copy; 2026 Tristan Zatylny</p>
+        </footer>
+    </body>
+</html>
